@@ -1,0 +1,27 @@
+Port 22
+# LogLevel INFO
+# SyslogFacility AUTH
+
+LoginGraceTime 1m
+PermitRootLogin no
+StrictModes yes
+
+PubkeyAuthentication yes
+
+HostbasedAuthentication no
+IgnoreRhosts yes
+
+PasswordAuthentication no
+PermitEmptyPasswords no
+
+ChallengeResponseAuthentication no
+
+UsePAM yes
+
+# AllowTcpForwarding no
+# X11Forwarding no
+# PrintMotd no
+
+UsePrivilegeSeparation yes
+
+AcceptEnv LANG LC_*
