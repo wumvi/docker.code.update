@@ -20,6 +20,9 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod u+x /*.sh && \
 	chmod a+x /run.sh && \
 	#
+	mkdir /update/ && \
+	chmod a+w /update/ && \
+	#
 	git clone https://github.com/wumvi/code.update.git $CODE_UPDATE_FOLDER --depth=1 && \
 	cd $CODE_UPDATE_FOLDER && \
 	composer install --no-interaction --no-dev --no-progress --no-suggest --optimize-autoloader --prefer-dist --ignore-platform-reqs --no-plugins && \
